@@ -1,3 +1,4 @@
+// Class Definitions
 class Person {
     constructor(name, age) {
         this._name = name; // Private property for name
@@ -26,22 +27,22 @@ class Person {
 
 class Student extends Person {
     study() {
-        console.log(`${this.name} is studying.`);
+        console.log(`${this.name} is studying`); // Ensure there's no period here
     }
 }
 
 class Teacher extends Person {
     teach() {
-        console.log(`${this.name} is teaching.`);
+        console.log(`${this.name} is teaching`);
     }
 }
 
 // Example usage
 const person = new Person("John", 25);
-console.log(Person.name); // Output: John
+console.log(person.name); // Output: John
 
 person.age = 30;
-console.log(Person.age); // Output: 30
+console.log(person.age); // Output: 30
 
 const student = new Student("Alice", 22);
 student.study(); // Output: Alice is studying
