@@ -1,6 +1,5 @@
-//complete this code
 class Person {
-	 constructor(name, age) {
+    constructor(name, age) {
         this.name = name; // Public property
         this.age = age;   // Public property
     }
@@ -19,17 +18,18 @@ class Person {
         }
     }
 }
-}
 
 class Student extends Person {
-	 study() {
+    study() {
         console.log(`${this.getName()} is studying.`);
     }
 }
 
-class Teacher extends Person {teach() {
+class Teacher extends Person {
+    teach() {
         console.log(`${this.getName()} is teaching.`);
-    }}
+    }
+}
 
 // Do not change the code below this line
 window.Person = Person;
